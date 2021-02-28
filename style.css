@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&family=Mulish:wght@400&display=swap");
+/** Global Style*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #0e1731;
+}
+
+a {
+  text-decoration: none;
+  color: #0e1731;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: auto;
+  display: inline-block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* !Global Style end*/
+
+/**Header*/
+
+header {
+  padding: 2.5rem 0;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+  font-family: "Mulish", sans-serif;
+}
+.nav__bar ul {
+  display: flex;
+  flex-direction: column;
+}
+.nav__bar ul li {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  transition: all 200ms ease-in-out;
+}
+.nav__bar ul li a:hover {
+  /* scale: 1.05; */
+  color: #4a4a4a;
+}
+.btn__container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.btn,
+.btn__dark {
+  padding: 0.75em 1.625em;
+
+  border: 1px solid #0e1731;
+  border-radius: 1.375rem;
+  transition: all 400ms ease-in-out;
+}
+
+.btn:hover {
+  color: #4a4a4a;
+  border: 1px solid #4a4a4a;
+  scale: 1.05;
+}
+
+.btn__dark {
+  color: white;
+  background-color: #0e1731;
+  margin-left: 1.25rem;
+}
+.btn__dark:hover {
+  border: 1px solid #4a4a4a;
+  background-color: #4a4a4a;
+  scale: 1.05;
+}
